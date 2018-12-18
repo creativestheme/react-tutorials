@@ -1,7 +1,10 @@
 import React from  'react'
 import ReactDOM from 'react-dom'
 
-ReactDOM.render(
-	<h1> Welcome to Bangladesh</h1>,
+
+setInterval(function(){
+	ReactDOM.render(
+	<h2>Time Now:- {new Date().toLocaleTimeString()}</h2>,
 	document.getElementById('root')
 	);
+},1000)
